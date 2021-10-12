@@ -1,0 +1,222 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+ul
+{
+    list-style-type: none;
+}
+body
+{
+    background: black;
+}
+img
+{
+    display: block;
+}
+.bg
+{
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+
+    width: 100vw;
+    height: 100%;
+
+    transform: translate(-50%,-50%);
+
+    background-image: url('/img/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-content
+{
+    position: absolute;
+    top: 64px;
+    left: 50%;
+
+    width: 96%;
+    max-width: 400px;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pf-pic
+{
+    height: 160px;
+    width: 100%;
+    max-width: 160px;
+
+    margin-bottom: 32px;
+}
+.rhyo-svg
+{
+    margin-bottom: 32px;
+}
+.track-links
+{
+    width: 100%;
+}
+.track-links ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.artwork img
+{
+    height: 190px;
+    width: 190px;
+}
+.track-art-link
+{
+    margin-bottom: 20px;
+}
+.track-art-link li
+{
+    height: 190px;
+    width: 190px;
+}
+.artwork
+{
+    position: relative;
+    height: 190px;
+    width: 190px;
+    overflow: hidden;
+}
+.artwork img
+{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 150ms;
+}
+.black-bar
+{
+    position: relative;
+    bottom: 36px;
+    background: rgba(0, 0, 0, 0.6);
+    height: 36px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.track-id
+{
+    margin-left: 10px;
+}
+.arrow
+{
+    margin-right: 20px;
+    transition: 100ms ease-in-out;
+}
+.track-art-link:hover .arrow
+{
+    margin-right: 10px;
+    transition: 150ms ease-in-out;
+}
+.listen-more
+{
+    margin-left: 20px;
+    transition: 100ms ease-in-out;
+}
+.lstn-more
+{
+
+    height: 48px;
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px white solid;
+    /* border-radius: 10px; */
+}
+.lstn-more:hover .arrow
+{
+    margin-right: 16px;
+}
+.lstn-more:hover .listen-more
+{
+    margin-left: 16px;
+    transition: 150ms ease-in-out;
+}
+.strm-services
+{
+    display: flex;
+}
+.strm-services a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    margin: 0px 0px 0px 16px;
+    opacity: 1;
+
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0px;
+
+    transition: 150ms ease-in-out;
+}
+.strm-services svg
+{
+    height: 20px;
+}
+.strm-services a:hover
+{
+    border-radius: 10px;
+
+    background: white;
+
+    transition: 100ms ease-in-out;
+}
+.strm-services a svg
+{
+    transition: 150ms ease-in-out;
+    fill: white;
+}
+.strm-services a:hover svg
+{
+    transition: 100ms ease-in-out;
+}
+.strm-services a:hover #spotify
+{
+    fill: #1DB954;
+}
+.strm-services a:hover #apple-music
+{
+    fill: #FA233B;
+}
+.strm-services a:hover #youtube
+{
+    fill: #ED1D24;
+}
+.btns
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom:32px;
+}
